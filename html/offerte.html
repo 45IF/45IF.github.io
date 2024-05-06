@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Offerte</title>
+</head>
+
+<body>
+    <button class="go-top-btn">
+        <img src="../img/arrow-up.png" alt="arrow up">
+    </button>
+    <script src="../javascript/three.min.js"></script>
+    <script type="module" src="../javascript/sfondo.js"></script>
+    <script src="../javascript/show-on-scroll.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../html/index.html">ASTROTRAVEL</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../html/index.html">Home</a>
+                        <a class="nav-link" href="../html/chiSiamo.html">Chi siamo</a>
+                        <a class="nav-link active" aria-current="page" href="../html/offerte.html">Offerte</a>
+                        <a class="nav-link" href="../html/contatti.html">Contatti</a>
+                        <a class="nav-link" href="../html/galleria.html">Galleria</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="padding-box">
+        <div class="form-booking">
+            <h1>Trova il tuo volo</h1>
+            <br>
+            <div class="btn-group" role="group">
+                <label for="sel1">Tipologia biglietto</label>
+                <select class="form-control" id="sel1">
+                    <option>Andata</option>
+                    <option>Andata e Ritorno</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="maincontent">
+                <div class="row">
+                    <div class="col-sm-6 col-xm-6 abc">
+                        <h5> Pianeta di partenza </h5>
+                        <input type="text" placeholder="Pianeta o stazione" class="rounded-3">
+                    </div>
+                    <div class="col-sm-6 col-xm-6 abc">
+                        <h5> Pianeta di arrivo </h5>
+                        <input type="text" placeholder="Pianeta o stazione" class="rounded-3">
+                    </div>
+                </div>
+                <br>
+                <div class="row form-group">
+                    <div class="col-sm-4 col-xm-6">
+                        <h5> Partenza</h5>
+                        <input class="glyphicon glyphicon-calendar rounded-3" type="date" placeholder="gg/mm/aaaa">
+                    </div>
+                    <div class="col-sm-4 col-xm-6">
+                        <h5> Ritorno </h5>
+                        <input class="glyphicon glyphicon-calendar rounded-3" type="date" placeholder="gg/mm/aaaa">
+                    </div>
+                    <div class="col-sm-4 col-xm-6">
+                        <div class="col-sm-6">
+                            <h5> Adulti </h5>
+                            <input type="number" name="points" min="1" max="100" step="1" value="1" class="rounded-3">
+                        </div>
+                        <div class="col-sm-6 abc">
+                            <h5> Ragazzi </h5>
+                            <input type="number" name="points" min="1" max="100" step="1" value="0" class="rounded-3">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <strong> Opzioni avanzate <span class="glyphicon glyphicon-chevron-down"></span></strong>
+                <br>
+                <br>
+                <div id="choices">
+                    <div id="choiceone">
+                        <label for="sel1">Classe di preferenza</label>
+                        <select class="form-control" id="sel1">
+                            <option>Prima classe</option>
+                            <option>Business</option>
+                            <option>Economy</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div id="choicetwo">
+                        <label class="checkbox-inline"><input type="checkbox" value=""> Pasto</label>
+                        <label class="checkbox-inline"><input type="checkbox" value=""> Wifi</label>
+                    </div>
+                </div>
+                <br>
+                <button type="button" class="btn btn-lg btn-warning">Cerca</button>
+                <br><br>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class="destinazioni">
+        <h1>Destinazioni popolari</h1>
+        <p>Queste destinazioni sono molto gettonate tra gli altri viaggiatori. Cerca e confronta i voli e parti all'avventura anche tu.
+        </p>
+        <div class="row">
+            <div class="column">
+                <img src="../img/planet17.jpg" alt="planet17" class="reveal">
+                <p>HD 209458 b - Nota anche come "Osiris"</p>
+            </div>
+            <div class="column">
+                <img src="../img/planet18.jpg" alt="planet18" class="reveal">
+                <p>Kepler-186f - Conosciuto per la sua somiglianza con la Terra</p>
+            </div>
+            <div class="column">
+                <img src="../img/planet19.jpg" alt="planet19" class="reveal">
+                <p>WASP-121b - Nota anche come "Hot Jupiter"</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="../img/planet20.jpg" alt="planet20" class="reveal">
+                <p>Tau Ceti e - Orbita attorno a Tau Ceti, una stella simile al Sole.</p>
+            </div>
+            <div class="column">
+                <img src="../img/planet21.jpg" alt="planet21" class="reveal">
+                <p>Proxima Centauri b - Orbita attorno alla stella più vicina al nostro sistema solare, Proxima Centauri.</p>
+            </div>
+            <div class="column">
+                <img src="../img/planet22.jpg" alt="planet22" class="reveal">
+                <p>K2-18b - Un esopianeta situato nella zona abitabile attorno a K2-18.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center text-white" style="background-color: #080d35">
+        <div class="container">
+            <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="../html/chiSiamo.html" class="text-white">Chi siamo</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="../html/offerte.html" class="text-white">Offerte</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="../html/contatti.html" class="text-white">Contatti</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="../html/galleria.html" class="text-white">Galleria</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-2" />
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright:
+            <a class="text-white" href="https://astrotravel.com/">AstroTravel.com</a>
+        </div>
+    </footer>
+    <script src="../javascript/top.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

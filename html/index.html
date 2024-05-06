@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+  <title>Home</title>
+</head>
+
+<body onload="typeWriter()">
+  <button class="go-top-btn">
+    <img src="../img/arrow-up.png" alt="arrow up">
+  </button>
+  <script src="../javascript/three.min.js"></script>
+  <script type="module" src="../javascript/sfondo.js"></script>
+  <script src="../javascript/titolo.js"></script>
+  <script src="../javascript/show-on-scroll.js"></script>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../html/index.html">ASTROTRAVEL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="../html/index.html">Home</a>
+            <a class="nav-link" href="../html/chiSiamo.html">Chi siamo</a>
+            <a class="nav-link" href="../html/offerte.html">Offerte</a>
+            <a class="nav-link" href="../html/contatti.html">Contatti</a>
+            <a class="nav-link" href="../html/galleria.html">Galleria</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <h1 id="titolo"></h1>
+  <div id="btn">
+    <button class="button1"><a href="../html/offerte.html" target="_blank">Prenota Ora</a></button>
+    <button class="button2"><a href="../html/chiSiamo.html" target="_blank">Info</a></button>
+  </div>
+  <section class="padding-box">
+    <p>
+      Ti diamo il benvenuto nell'universo straordinario di AstroTravel,
+      il luogo dove i tuoi sogni di esplorare lo spazio prendono vita.
+      Siamo qui per condurti in un viaggio senza precedenti attraverso le stelle,
+      i pianeti e le galassie. La nostra missione è trasformare la tua passione per l'astronomia in un'avventura
+      indimenticabile.
+      Scopri le nostre offerte esclusive, immergiti nella bellezza di immagini celesti mozzafiato nel nostro
+      album fotografico, e preparati a prenotare la tua prossima destinazione spaziale.
+      Da viaggi intergalattici a esplorazioni lunari, AstroTravel è la porta per realizzare i tuoi desideri di viaggio
+      più audaci.
+      Pronto per un'esperienza che supera ogni confine? Entra nel nostro universo e inizia il tuo viaggio con
+      AstroTravel!
+    </p>
+    <p class="didascalia">
+      Vai alla scoperta di nuovi pianeti
+    </p>
+    <div class="row">
+      <div class="column">
+        <img src="../img/planet1.jpg" alt="planet1" class="reveal" draggable="false">
+      </div>
+      <div class="column">
+        <img src="../img/planet4.jpg" alt="planet4" class="reveal" draggable="false">
+      </div>
+      <div class="column">
+        <img src="../img/planet5.jpg" alt="planet5" class="reveal" draggable="false">
+      </div>
+    </div>
+    <p>Scegli AstroTravel per il tuo viaggio alla scoperta di nuovi pianeti, dove l'avventura e la meraviglia si fondono
+      per creare ricordi che dureranno per sempre. Entra nell'orbita dell'ignoto e lasciati guidare dalla curiosità,
+      perché in ogni angolo del cosmo, c'è un nuovo mondo pronto a essere scoperto da te.</p>
+    <p class="didascalia">
+      Esplora nuove terre
+    </p>
+    <div class="row">
+      <div class="column">
+        <img src="../img/planet3.jpg" alt="planet3" class="reveal" draggable="false">
+      </div>
+      <div class="column">
+        <img src="../img/planet6.jpg" alt="planet6" class="reveal" draggable="false">
+      </div>
+      <div class="column">
+        <img src="../img/planet7.jpg" alt="planet7" class="reveal" draggable="false">
+      </div>
+    </div>
+    <p>Imbarcati in un viaggio straordinario con AstroTravel e lasciati guidare dalla curiosità mentre esplori nuove
+      terre inesplorate. Condividiamo la tua passione per l'avventura e offriamo esperienze uniche che ti porteranno
+      oltre i confini conosciuti. Da scenari mozzafiato a culture affascinanti, AstroTravel è la tua chiave per aprire
+      le porte a nuovi orizzonti.</p>
+    <p class="didascalia">
+      Fai una vacanza e divertiti
+    </p>
+    <div class="row">
+      <div class="column">
+        <img src="../img/resort.jpg" alt="resort" class="reveal" draggable="false">
+      </div>
+      <div class="column">
+        <img src="../img/parco1.jpg" alt="parco1" class="reveal" draggable="false">
+      </div>
+      <div class="column">
+        <img src="../img/parco2.jpg" alt="parco2" class="reveal" draggable="false">
+      </div>
+    </div>
+    <p>Sia che tu stia cercando un rifugio rilassante o avventure entusiasmanti, AstroTravel è il compagno perfetto per
+      trasformare la tua vacanza in un'occasione unica di felicità e scoperta. Prenota ora e preparati a vivere una
+      vacanza fuori dall'ordinario con AstroTravel!</p>
+  </section>
+  <footer class="text-center text-white" style="background-color: #080d35">
+    <div class="container">
+      <section class="mt-5">
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="../html/chiSiamo.html" class="text-white">Chi siamo</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="../html/offerte.html" class="text-white">Offerte</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="../html/contatti.html" class="text-white">Contatti</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="../html/galleria.html" class="text-white">Galleria</a>
+            </h6>
+          </div>
+        </div>
+      </section>
+      <hr class="my-2" />
+      <section class="text-center mb-2">
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+      <a class="text-white" href="https://astrotravel.com/">AstroTravel.com</a>
+    </div>
+  </footer>
+  <script src="../javascript/top.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

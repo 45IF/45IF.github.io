@@ -1,0 +1,565 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: rgb(0, 0, 0);
+  overflow-x: hidden;
+  align-items: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+canvas {
+  position: fixed;
+  filter: brightness(0.6);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+button a {
+  font-family: 'Audiowide', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  font-family: 'Audiowide', sans-serif;
+}
+
+.padding-box{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.destinazioni{
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Audiowide';
+  color: rgb(255, 251, 0);
+  text-align: center;
+}
+
+.destinazioni img{
+  width: 25%;
+}
+
+.destinazioni p{
+  text-align: center;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.form-booking{
+  border-radius: 50px;
+  max-width:80%;
+  padding: 40px;
+  margin: 0 auto;
+  background-image: linear-gradient(45deg,rgb(252, 238, 192), rgb(255, 251, 36),rgb(208, 255, 0));
+  color: rgb(24, 19, 54);
+  margin-top: 40px;
+  font-family: 'Audiowide';
+}
+
+.maincontent input{
+  font-size: 20px;
+}
+
+.storia,.missione {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contatti {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contatti .content {
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.contatti .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: rgb(255, 251, 0);
+  font-family: 'Audiowide',sans-serif;
+}
+
+.contatti .content p {
+  font-weight: 300;
+  color: white;
+}
+
+.container-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container-box .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-box .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container-box .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background-color: rgb(255, 238, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 32px;
+}
+
+.container-box .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: white;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container-box .contactInfo .box .text h3 {
+  color: #00bcd4;
+  font-weight: 500;
+}
+
+.form-msg {
+  width: 40%;
+  padding: 40px;
+  background: white;
+  border-radius: 30px;
+}
+
+.form-msg h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-msg .InputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-msg .InputBox input, 
+.form-msg .InputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.form-msg .InputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.form-msg .InputBox input:focus ~ span,
+.form-msg .InputBox input:valid ~ span,
+.form-msg .InputBox textarea:focus ~ span,
+.form-msg .InputBox textarea:valid ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.form-msg .InputBox input[type="submit"]{
+  width: 100px;
+  background: #00adc4;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.form-msg .InputBox input[type="submit"]:hover{
+  scale:1.1;
+  background: #00e1ff;
+}
+
+#titolo {
+  color: rgb(255, 255, 255);
+  font-size: 7vh;
+  font-family: 'Audiowide';
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+    1px 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.storia h1 {
+  color: rgb(53, 231, 255);
+  font-family: 'Audiowide', sans-serif;
+  margin-top: 10vh;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.missione h1 {
+  color: rgb(53, 255, 137);
+  font-family: 'Audiowide', sans-serif;
+  margin-top: 10vh;
+  text-align: right;
+  padding-right: 20px;
+}
+
+#btn {
+  text-align: center;
+  margin: 15px;
+}
+
+.button1 {
+  border: none;
+  padding: 1em;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: 1.2vw;
+  letter-spacing: 0.2vw;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.button1:before,
+.button1:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: '';
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82);
+}
+
+.button1:before {
+  filter: blur(7px);
+  transition: all 0.25s ease;
+  animation: pulse 10s infinite ease;
+}
+
+.button1:after {
+  filter: blur(0.3px);
+}
+
+.button1:hover:before {
+  width: 115%;
+  height: 115%;
+}
+
+.button2 {
+  border: none;
+  margin-left: 20px;
+  padding: 1em;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: 1.2em;
+  letter-spacing: 0.2em;
+  position: relative;
+  z-index: 1;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.button2:before,
+.button2:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: '';
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(60deg,
+      transparent,
+      transparent),
+    linear-gradient(60deg,
+      #22d3bb, #104b02);
+}
+
+.button2:before {
+  filter: blur(7px);
+  transition: all 0.25s ease;
+  animation: pulse 10s infinite ease;
+}
+
+.button2:after {
+  filter: blur(0.3px);
+}
+
+.button2:hover:before {
+  width: 115%;
+  height: 115%;
+}
+
+.contatti p{
+  font-family: 'Audiowide', sans-serif;
+  color: white;
+  padding: 2%;
+}
+
+p {
+  font-family: 'Audiowide', sans-serif;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: justify;
+  font-style: oblique;
+  font-size: 2vh;
+}
+
+.storia p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.missione p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.didascalia {
+  font-size: 50px;
+  color: #fbff00;
+  text-align: center;
+  font-family: 'Audiowide', sans-serif;
+  padding: 20px;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  transform: rotateZ(-2deg);
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.go-top-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  background: #000000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+.go-top-btn img {
+  width: 80px;
+  height: 80px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 4px;
+}
+
+.column img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.galleria{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.galleria img {
+  transition: 0.2s;
+  border: 5px solid white;
+}
+
+.galleria img:hover {
+  border: 5px solid;
+  border-image: linear-gradient(to right,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82);
+  border-radius: 0;
+  border-image-slice: 1;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+
+@media (max-width:991px) {
+  .contatti{
+    padding: 50px;
+  }
+  .container-box{
+    flex-direction: column;
+  }
+  .container-box .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container-box .contactInfo,
+  .form-msg{
+    width: 100%;
+  }
+}
+
+@media (max-width:770px) {
+  .popup-image img {
+    width: 95%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .storia h1 {
+    text-align: center;
+  }
+
+  .missione h1 {
+    text-align: center;
+  }
+}
